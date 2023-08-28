@@ -8,10 +8,15 @@ function Detail() {
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
     ).json();
   };
+  console.log(id);
   useEffect(() => {
     getMovies();
   }, []);
-  return <h1>Detail</h1>;
+  return (
+    <div>
+        
+    </div>
+  );
 }
 
 export default Detail;
